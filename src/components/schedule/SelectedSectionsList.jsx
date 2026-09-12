@@ -7,9 +7,9 @@ const SelectedSectionsList = () => {
         <div>
             <h2>My Schedule</h2>
 
-            {selectedSections.length === 0? (
+            {selectedSections.length === 0 ? (
                 <p>No sections selected</p>
-            ): (
+            ) : (
                 selectedSections.map((section) => (
                     <div key={section.id}>
                         <strong>{section.courseId}</strong>

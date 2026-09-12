@@ -2,6 +2,7 @@ import { useCourses } from './hooks/useCourses';
 import CourseList from './components/courses/CourseList';
 import SelectedSectionsList from './components/schedule/SelectedSectionsList';
 import ScheduleTimetable from './components/schedule/ScheduleTimetable';
+import "./index.css"
 
 function App() {
   const { courses, loading, error } = useCourses();
