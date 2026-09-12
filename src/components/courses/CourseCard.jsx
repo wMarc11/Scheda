@@ -15,11 +15,13 @@ const CourseCard = ({ course }) => {
             </div>
             <div>
                 {course.sections.map((section) => {
-                    <SectionRow
-                        key={section.id}
-                        section={section}
-                        courseId={course.id}
-                    />
+                    return(
+                        <SectionRow
+                            key={section.id}
+                            section={section}
+                            courseId={course.id}
+                        />
+                    );
                 })}
             </div>
         </div>
