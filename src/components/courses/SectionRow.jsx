@@ -1,4 +1,12 @@
-const SectionRow = ({ section }) => {
+import { useSchedule } from "../../context/ScheduleContext";
+
+const SectionRow = ({ section, courseId }) => {
+    const { selectedSections, addSection, removeSection } = useSchedule();
+
+    const isAdded = selectedSections.some(
+        (selectedSection) => selectedSection.id === section.id
+    ); 
+
     return (
         <div>
             <div>
@@ -19,8 +27,14 @@ const SectionRow = ({ section }) => {
                 <p>{section.room}</p>
             </div>
 
-            <button>
-                + Add
+            <button onClick={() => {
+                if (isAdded){
+                    removeSection(section.id);
+                } else {
+                    addSection(section, courseId);
+                }
+            }}>
+                {isAdded ? (<p><span>✓</span> Add</p>) : (<p><span>+</span> Add</p>)}
             </button>
         </div>
     );

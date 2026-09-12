@@ -18,6 +18,7 @@ const CourseCard = ({ course }) => {
                     <SectionRow
                         key={section.id}
                         section={section}
+                        courseId={course.id}
                     />
                 })}
             </div>
