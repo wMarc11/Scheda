@@ -1,6 +1,7 @@
 import { useCourses } from './hooks/useCourses';
 import CourseList from './components/courses/CourseList';
-import SelectedSectionsList from './components/schedule/SelectedSectionsList'
+import SelectedSectionsList from './components/schedule/SelectedSectionsList';
+import ScheduleTimetable from './components/schedule/ScheduleTimetable';
 
 function App() {
   const { courses, loading, error } = useCourses();
@@ -19,6 +20,7 @@ function App() {
 
       <CourseList courses={courses} />
       <SelectedSectionsList />
+      <ScheduleTimetable />
     </main>
   );
 }
