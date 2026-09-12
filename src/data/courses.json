@@ -1,0 +1,163 @@
+[
+  {
+    "id": "CCPROG3",
+    "code": "CCPROG3",
+    "title": "Object-Oriented Programming",
+    "units": 3,
+    "color": "blue",
+    "sections": [
+      {
+        "id": "CCPROG3-Y01",
+        "section": "Y01",
+        "instructor": "Juan Dela Cruz",
+        "room": "G301",
+        "schedule": [
+          { "day": "Mon", "start": "10:00", "end": "11:30" },
+          { "day": "Wed", "start": "10:00", "end": "11:30" }
+        ]
+      },
+      {
+        "id": "CCPROG3-Y02",
+        "section": "Y02",
+        "instructor": "Maria Santos",
+        "room": "G305",
+        "schedule": [
+          { "day": "Tue", "start": "13:00", "end": "14:30" },
+          { "day": "Thu", "start": "13:00", "end": "14:30" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CSMODEL",
+    "code": "CSMODEL",
+    "title": "Mathematical Modeling",
+    "units": 3,
+    "color": "orange",
+    "sections": [
+      {
+        "id": "CSMODEL-Y01",
+        "section": "Y01",
+        "instructor": "Pedro Reyes",
+        "room": "G201",
+        "schedule": [
+          { "day": "Mon", "start": "13:00", "end": "14:30" },
+          { "day": "Wed", "start": "13:00", "end": "14:30" }
+        ]
+      },
+      {
+        "id": "CSMODEL-Y02",
+        "section": "Y02",
+        "instructor": "Celine Ramos",
+        "room": "G204",
+        "schedule": [
+          { "day": "Tue", "start": "09:30", "end": "11:00" },
+          { "day": "Thu", "start": "09:30", "end": "11:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CCAPDEV",
+    "code": "CCAPDEV",
+    "title": "Application Development",
+    "units": 3,
+    "color": "purple",
+    "sections": [
+      {
+        "id": "CCAPDEV-Y01",
+        "section": "Y01",
+        "instructor": "Angela Cruz",
+        "room": "G401",
+        "schedule": [
+          { "day": "Tue", "start": "15:00", "end": "16:30" },
+          { "day": "Thu", "start": "15:00", "end": "16:30" }
+        ]
+      },
+      {
+        "id": "CCAPDEV-Y02",
+        "section": "Y02",
+        "instructor": "Andre Lim",
+        "room": "G404",
+        "schedule": [
+          { "day": "Mon", "start": "15:30", "end": "17:00" },
+          { "day": "Wed", "start": "15:30", "end": "17:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GESTSOC",
+    "code": "GESTSOC",
+    "title": "Science, Technology & Society",
+    "units": 3,
+    "color": "green",
+    "sections": [
+      {
+        "id": "GESTSOC-Y01",
+        "section": "Y01",
+        "instructor": "Rina Garcia",
+        "room": "A110",
+        "schedule": [
+          { "day": "Fri", "start": "09:00", "end": "12:00" }
+        ]
+      },
+      {
+        "id": "GESTSOC-Y02",
+        "section": "Y02",
+        "instructor": "Noel Villanueva",
+        "room": "A112",
+        "schedule": [
+          { "day": "Sat", "start": "08:00", "end": "11:00" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CSNETWK",
+    "code": "CSNETWK",
+    "title": "Computer Networks",
+    "units": 3,
+    "color": "pink",
+    "sections": [
+      {
+        "id": "CSNETWK-Y01",
+        "section": "Y01",
+        "instructor": "Carlo Tan",
+        "room": "L203",
+        "schedule": [
+          { "day": "Mon", "start": "08:00", "end": "09:30" },
+          { "day": "Wed", "start": "08:00", "end": "09:30" }
+        ]
+      },
+      {
+        "id": "CSNETWK-Y02",
+        "section": "Y02",
+        "instructor": "Mia Flores",
+        "room": "L205",
+        "schedule": [
+          { "day": "Tue", "start": "11:00", "end": "12:30" },
+          { "day": "Thu", "start": "11:00", "end": "12:30" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GEDANCE",
+    "code": "GEDANCE",
+    "title": "Dance and Wellness",
+    "units": 2,
+    "color": "yellow",
+    "sections": [
+      {
+        "id": "GEDANCE-Y01",
+        "section": "Y01",
+        "instructor": "Lara Bautista",
+        "room": "R501",
+        "schedule": [
+          { "day": "Fri", "start": "13:00", "end": "15:00" }
+        ]
+      }
+    ]
+  }
+]
