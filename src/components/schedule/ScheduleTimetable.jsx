@@ -16,10 +16,20 @@ const ScheduleTimetable = () => {
         "8:00 PM"
     ];
 
+    const courseCount = selectedSections.length;
+    const totalUnits = selectedSections.reduce(
+        (total, section) => total + section.units, 0
+    );
+
     return (
         <div className="rounded-xl border border-gray-200 bg-white p-6">
-            <h2 className="mb-6 text-xl font-semibold">Your week</h2>
-            
+
+            <div className="mb-6 flex">
+                <h2 className="mb-6 text-xl font-semibold">Your week</h2>
+
+                <p className="text-md text-gray-500 ml-auto">{courseCount} courses • {totalUnits} units</p>
+            </div>
+
             <div className="grid grid-cols-7">
                 <div className="border-b border-gray-200"></div>
 

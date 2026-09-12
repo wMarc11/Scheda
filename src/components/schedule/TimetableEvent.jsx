@@ -20,12 +20,13 @@ const TimetableEvent = ({ section, schedule }) => {
                 top: `${top}px`,
                 height: `${height}px`,
                 left: `${dayIndex * (100 / 6)}%`,
-                width: `${100 / 6}%`
+                width: `${100 / 6}%`    
             }}
         >
-            <strong>{section.courseId}</strong>
-            <p>{section.section}</p>
-            <small>{section.room}</small>
+            <p><strong>{section.courseId} - {section.section}</strong></p>
+            <p>{schedule.start} - {schedule.end}</p>
+            <small>Room: {section.room}</small>
+            
         </div>
     );
 };

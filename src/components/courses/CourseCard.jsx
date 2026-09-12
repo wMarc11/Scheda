@@ -20,6 +20,7 @@ const CourseCard = ({ course }) => {
                             key={section.id}
                             section={section}
                             courseId={course.id}
+                            units={course.units}
                         />
                     );
                 })}

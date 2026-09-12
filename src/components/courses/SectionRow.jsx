@@ -1,6 +1,6 @@
 import { useSchedule } from "../../context/ScheduleContext";
 
-const SectionRow = ({ section, courseId }) => {
+const SectionRow = ({ section, courseId, units }) => {
     const { selectedSections, addSection, removeSection } = useSchedule();
 
     const isAdded = selectedSections.some(
@@ -31,7 +31,7 @@ const SectionRow = ({ section, courseId }) => {
                 if (isAdded){
                     removeSection(section.id);
                 } else {
-                    addSection(section, courseId);
+                    addSection(section, courseId, units);
                 }
             }}>
                 {isAdded ? (<p><span>✓</span> Add</p>) : (<p><span>+</span> Add</p>)}

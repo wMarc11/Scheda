@@ -5,7 +5,7 @@ const ScheduleContext = createContext();
 export const ScheduleProvider = ({ children }) => {
     const [selectedSections, setSelectedSections] = useState([]);
 
-    const addSection = (section, courseId) => {
+    const addSection = (section, courseId, units) => {
         setSelectedSections((prev) => {
             const filtered = prev.filter((selectedSection) =>
                 selectedSection.courseId !== courseId 
@@ -16,6 +16,7 @@ export const ScheduleProvider = ({ children }) => {
                 {
                     ...section,
                     courseId,
+                    units
                 }
             ];
         });
