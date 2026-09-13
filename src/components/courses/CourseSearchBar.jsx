@@ -1,23 +1,47 @@
-import { useState } from "react";
+import { useState} from "react";
 
-const CourseSearchBar = ({ onSearch }) => {
+const CourseSearchBar = ({ onSearch, onDayChange }) => {
     const [query, setQuery] = useState("");
+    const [day, setDay] = useState("");
 
-    const handleChange = (event) => {
+    const handleSearchChange = (event) => {
         const value = event.target.value;
 
         setQuery(value);
         onSearch(value);
     };
 
+    const handleDayChange = (event) => {
+        const value = event.target.value;
+
+        setDay(value);
+        onDayChange(value);
+    };
+
     return (
-        <input 
-            type="text"
-            value={query}
-            onChange={handleChange}
-            placeholder="Search by course or instructor"
-            className="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500"
-        />
+        <div className="flex gap-2">
+            <input 
+                type="text"
+                value={query}
+                onChange={handleSearchChange}
+                placeholder="Search by course or instructor"
+                className="w-[85%] rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-blue-500"
+            />
+            <select
+                type="select"
+                value={day}
+                onChange={handleDayChange}
+                className="w-[15%] rounded-lg border border-gray-300 px-2 py-3 text-sm outline-none focus:border-blue-500 text-center"
+            >
+                <option value="All">All days</option>
+                <option value="mon">Mon</option>
+                <option value="tue">Tue</option>
+                <option value="wed">Wed</option>
+                <option value="thu">Thu</option>
+                <option value="fri">Fri</option>
+                <option value="Sat">Sat</option>
+            </select>
+        </div>
     );
 }
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useCourses } from './hooks/useCourses';
 import CourseList from './components/courses/CourseList';
 import SelectedSectionsList from './components/schedule/SelectedSectionsList';
@@ -10,6 +10,35 @@ import "./index.css"
 function App() {
   const { courses, loading, error } = useCourses();
   const [query, setQuery] = useState("");
+  const [day, setDay] = useState("All");
+
+  const filteredCourses = useMemo(() => {
+    return courses.map((course) => {
+      const searchTerm = query.toLowerCase();
+
+      const courseMatches = 
+        course.code.toLowerCase().includes(searchTerm) ||
+        course.title.toLowerCase().includes(searchTerm);
+
+      const filteredSections = course.sections.filter((section) => {
+        {/*If no course matches, the one being searched for is a professor*/}
+        const matchesSearch = courseMatches
+          ? true
+          : section.instructor.toLowerCase().includes(searchTerm);
+
+        const matchesDay = day === "All" ||
+          section.schedule.some((schedule) => schedule.day.toLowerCase() === day);
+
+          return matchesSearch && matchesDay;
+      });
+
+      return {
+        ...course,
+        sections: filteredSections
+      };
+      
+    }).filter((course) => course.sections.length > 0)
+  }, [courses, query, day]);
 
   if (loading) {
     return <p>Loading courses...</p>
@@ -18,27 +47,6 @@ function App() {
   if(error) {
     return <p>Failed to load courses...</p>
   }
-
-  const filteredCourses = courses.map((course) => {
-    const searchTerm = query.toLowerCase();
-
-    const courseMatches = 
-      course.code.toLowerCase().includes(searchTerm) ||
-      course.title.toLowerCase().includes(searchTerm);
-
-    {/*If no course matches, the one being searched for is a professor*/}
-    const filteredSections = courseMatches 
-      ? course.sections
-      : course.sections.filter((section) => 
-        section.instructor.toLowerCase().includes(searchTerm)
-      );
-
-    return {
-      ...course,
-      sections: filteredSections
-    };
-    
-  }).filter((course) => course.sections.length > 0);
 
   return (  
     <>
@@ -54,8 +62,8 @@ function App() {
         <div className="mt-14">
           <h1 className="mb-6 text-2x1 font-bold">Course Scheduler</h1>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <div>
-              <CourseSearchBar onSearch={setQuery} />
+            <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 max-w-[700px]">
+              <CourseSearchBar onSearch={setQuery} onDayChange={setDay} />
               <CourseList courses={filteredCourses} />
             </div>
 
