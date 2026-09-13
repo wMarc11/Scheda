@@ -22,10 +22,10 @@ const ScheduleTimetable = () => {
     );
 
     return (
-        <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 lg:h-[600px] lg:max-w-[700px] sticky top-24">
+        <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 lg:h-[610px] lg:max-w-[700px] sticky top-24">
 
-            <div className="mb-6 flex">
-                <h2 className="mb-6 text-lg sm:text-xl font-semibold">Your week</h2>
+            <div className="mb-2 flex">
+                <h2 className="text-md md:text-xl font-semibold">Your week</h2>
 
                 <p className="text-xs sm:text-sm text-gray-500 ml-auto">{courseCount} courses • {totalUnits} units</p>
             </div>
@@ -47,7 +47,7 @@ const ScheduleTimetable = () => {
                     <div className="grid grid-cols-7">
                         {times.map((time) => (
                             <div key={time} className="contents">
-                                <div className="h-[60px] border-b border-gray-200 p-2 sm:p-3 text-xs sm:text-sm text-gray-500">
+                                <div className="h-[65px] border-b border-gray-200 p-2 sm:p-3 text-xs sm:text-sm text-gray-500">
                                     {time}
                                 </div>
 

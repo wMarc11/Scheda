@@ -3,17 +3,17 @@ import CourseCard from "./CourseCard";
 const CourseList = ({ courses }) => {
     return (
         courses.length > 0 ?
-        <div>
+        <div className="flex flex-col gap-5 max-h-[60vh] lg:max-h-none overflow-y-auto">
             {courses.map((course) => {
                 return(
                     <CourseCard
                         key={course.id}
-                        course={course}
+                        course={course} 
                     />
                 );
             })}
         </div> :
-        <div className="flex flex-col p-4 justify-center items-center mt-31">
+        <div className="flex flex-col p-4 justify-center items-center pt-30">
             <span className="material-symbols-outlined text-gray-400 !text-[36px]">
                 search
             </span>

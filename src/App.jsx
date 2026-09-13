@@ -59,10 +59,10 @@ function App() {
         </div>
       </header>
       <main className="lg:mx-5 max-w-7x1 p-6 flex justify-center">
-        <div className="mt-14">
-          <h1 className="mb-6 text-2x1 font-bold">Course Scheduler</h1>
+        <div className="mt-24">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 max-w-[700px]">
+            <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 max-w-[700px] gap-7 flex flex-col">
+              <h1 className="text-[16px] md:text-[22px] font-bold">Find your classes</h1>
               <CourseSearchBar onSearch={setQuery} onDayChange={setDay} />
               <CourseList courses={filteredCourses} />
             </div>
