@@ -46,7 +46,7 @@
                     onChange={handleFilterChange}
                     className="w-[25%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center"
                 >
-                    <option value="All">All</option>
+                    <option value="All">All Courses</option>
                     <option value="added">Added</option>
                     <option value="not-added">Not Added</option>
                 </select>

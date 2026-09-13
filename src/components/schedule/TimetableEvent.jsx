@@ -8,7 +8,7 @@ const TimetableEvent = ({ section, schedule, courseColor }) => {
     const duration = endMinutes - startMinutes;
 
     const timeTableStart = 8 * 60;
-    const pixelsPerHour = 32.5;
+    const pixelsPerHour = 32.5; {/*32.5 because every 2 hours is 65px of height*/}
 
     const top = ((startMinutes - timeTableStart) / 60) * pixelsPerHour;
     const height = (duration / 60) * pixelsPerHour;
