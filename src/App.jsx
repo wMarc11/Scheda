@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useCourses } from './hooks/useCourses';
 import CourseList from './components/courses/CourseList';
-import SelectedSectionsList from './components/schedule/SelectedSectionsList';
 import ScheduleTimetable from './components/schedule/ScheduleTimetable';
 import CourseSearchBar from './components/courses/CourseSearchBar';
 import logo from './assets/images/scheda-logo.png'
@@ -65,7 +64,7 @@ function App() {
       <header className="bg-white border-b border-gray-200 fixed w-full z-100">
         <div className="mx-auto flex max-w-[1300px] px-4">
           <div className="flex items-center w-full">
-            <img src={logo} 
+            <img src={logo} alt="Scheda logo"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
               className="-ml-6 w-[150px] h-[40px] md:w-[250px] md:h-[70px] cursor-pointer transition-all ease-in-out hover:scale-110" 
             />

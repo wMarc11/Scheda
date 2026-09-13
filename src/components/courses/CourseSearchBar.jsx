@@ -62,7 +62,7 @@
                     <option value="wed">Wed</option>
                     <option value="thu">Thu</option>
                     <option value="fri">Fri</option>
-                    <option value="Sat">Sat</option>
+                    <option value="sat">Sat</option>
                 </select>
             </div>
         );
