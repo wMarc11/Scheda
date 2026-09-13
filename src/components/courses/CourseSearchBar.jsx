@@ -28,7 +28,7 @@
 
         return (
             <div className="flex gap-2">
-                <div className="relative flex w-[50%] md:w-[65%]">
+                <div className="relative flex w-[50%] md:w-[60%]">
                     <span className="material-symbols-outlined !hidden lg:!block md:absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 !text-[20px]">
                         search
                     </span>
@@ -54,7 +54,7 @@
                     type="select"
                     value={day}
                     onChange={handleDayChange}
-                    className="w-[25%] md:w-[15%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center"
+                    className="w-[25%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center"
                 >
                     <option value="All">All days</option>
                     <option value="mon">Mon</option>

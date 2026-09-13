@@ -25,7 +25,7 @@ const TimetableEvent = ({ section, schedule }) => {
 
     return(
         <div
-            className={`absolute rounded-md ${color} p-1 lg:p-2 text-[clamp(6px,0.7vw,10px)] leading-tight text-center flex flex-col justify-center mx-auto overflow-hidden`}
+            className={`absolute rounded-t-md ${color} p-1 lg:p-2 text-[clamp(6px,0.7vw,10px)] leading-tight text-center flex flex-col justify-center mx-auto overflow-hidden`}
             style={{
                 top: `${top}px`,
                 height: `${height}px`,

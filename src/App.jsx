@@ -61,8 +61,8 @@ function App() {
   }
 
   return (  
-    <>
-      <header className="bg-white border-b border-gray-200 fixed w-full">
+    <>  
+      <header className="bg-white border-b border-gray-200 fixed w-full z-100">
         <div className="mx-auto flex max-w-[1300px] px-4">
           <div className="flex items-center w-full">
             <img src={logo} 
@@ -70,7 +70,7 @@ function App() {
               className="-ml-6 w-[150px] h-[40px] md:w-[250px] md:h-[70px] cursor-pointer transition-all ease-in-out hover:scale-110" 
             />
             <div className="ml-auto flex items-center gap-7 md:-mr-5 px-4 md:px-none">
-              <p className="text-xs md:text-md font-semibold">Term 1, AY 2026-2027</p>
+              <p className="text-xs lg:text-[14px] font-semibold">Term 1, AY 2026-2027</p>
               <span className="material-symbols-outlined text-gray-400 !text-[30px] md:!text-[50px] !text-blue-500">
                 account_circle  
               </span>
