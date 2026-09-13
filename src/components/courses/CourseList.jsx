@@ -13,7 +13,7 @@ const CourseList = ({ courses }) => {
                 );
             })}
         </div> :
-        <div className="flex flex-col p-4 justify-center items-center pt-30">
+        <div className="flex flex-col p-4 justify-center items-center">
             <span className="material-symbols-outlined text-gray-400 !text-[36px]">
                 search
             </span>
