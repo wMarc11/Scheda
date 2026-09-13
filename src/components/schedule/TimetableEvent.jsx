@@ -1,6 +1,6 @@
 import { timetoMinutes, getDayIndex } from "../../utils/time";
 
-const TimetableEvent = ({ section, schedule }) => {
+const TimetableEvent = ({ section, schedule, courseColor }) => {
     const dayIndex = getDayIndex(schedule.day);
     const startMinutes = timetoMinutes(schedule.start);
     const endMinutes = timetoMinutes(schedule.end);
@@ -13,19 +13,56 @@ const TimetableEvent = ({ section, schedule }) => {
     const top = ((startMinutes - timeTableStart) / 60) * pixelsPerHour;
     const height = (duration / 60) * pixelsPerHour;
 
-    const firstTwoLettersInSection = section.courseId.slice(0, 2);
+    const colors = {
+        blue: {
+            bg: "bg-blue-50"
+        },
+        orange: {
+            bg: "bg-orange-50"
+        },
+        purple: {
+            bg: "bg-purple-50"
+        },
+        green: {
+            bg: "bg-green-50"
+        },
+        pink: {
+            bg: "bg-pink-50"
+        },
+        yellow: {
+            bg: "bg-yellow-50"
+        },
+        teal: {
+            bg: "bg-teal-50"
+        },
+        red: {
+            bg: "bg-red-50"
+        },
+        indigo: {
+            bg: "bg-indigo-50"
+        },
+        lime: {
+            bg: "bg-lime-50"
+        },
+        magenta: {
+            bg: "bg-fuchsia-50"
+        },
+        brown: {
+            bg: "bg-stone-50"
+        },
+        cyan: {
+            bg: "bg-cyan-50"
+        },
+        slate: {
+            bg: "bg-slate-50"
+        },
+    };
 
-    const color = firstTwoLettersInSection === "CC" ?
-        "bg-blue-100 text-blue-900" : 
-        firstTwoLettersInSection === "GE" ?
-        "bg-green-100 text-green-900" :
-        firstTwoLettersInSection === "CS" ?
-        "bg-amber-100 text-amber-900" :
-        "bg-blue-100 text-blue-900";
+    const color = colors[courseColor];
 
     return(
         <div
-            className={`absolute rounded-t-md ${color} p-1 lg:p-2 text-[clamp(6px,0.7vw,10px)] leading-tight text-center flex flex-col justify-center mx-auto overflow-hidden`}
+            className={`absolute rounded-t-md ${color.bg} p-1 lg:p-2 text-[clamp(6px,0.7vw,10px)] leading-tight text-center flex flex-col justify-center mx-auto overflow-hidden`}
             style={{
                 top: `${top}px`,
                 height: `${height}px`,

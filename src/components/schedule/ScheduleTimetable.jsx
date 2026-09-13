@@ -68,6 +68,7 @@ const ScheduleTimetable = () => {
                                         key={`${section.id}-${index}`}
                                         section={section}
                                         schedule={schedule}
+                                        courseColor={section.courseColor}
                                     />
                                 );
                             })

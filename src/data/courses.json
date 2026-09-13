@@ -12,16 +12,8 @@
         "instructor": "Juan Dela Cruz",
         "room": "G301",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "11:30",
-            "end": "13:00"
-          },
-          {
-            "day": "Wed",
-            "start": "11:30",
-            "end": "13:00"
-          }
+          { "day": "Mon", "start": "11:30", "end": "13:00" },
+          { "day": "Wed", "start": "11:30", "end": "13:00" }
         ]
       },
       {
@@ -30,16 +22,8 @@
         "instructor": "Maria Santos",
         "room": "G305",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "13:15",
-            "end": "14:45"
-          },
-          {
-            "day": "Thu",
-            "start": "13:15",
-            "end": "14:45"
-          }
+          { "day": "Tue", "start": "13:15", "end": "14:45" },
+          { "day": "Thu", "start": "13:15", "end": "14:45" }
         ]
       }
     ]
@@ -57,16 +41,8 @@
         "instructor": "Pedro Reyes",
         "room": "G201",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "15:00",
-            "end": "16:30"
-          },
-          {
-            "day": "Wed",
-            "start": "15:00",
-            "end": "16:30"
-          }
+          { "day": "Mon", "start": "15:00", "end": "16:30" },
+          { "day": "Wed", "start": "15:00", "end": "16:30" }
         ]
       },
       {
@@ -75,16 +51,8 @@
         "instructor": "Celine Ramos",
         "room": "G204",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "09:45",
-            "end": "11:15"
-          },
-          {
-            "day": "Thu",
-            "start": "09:45",
-            "end": "11:15"
-          }
+          { "day": "Tue", "start": "09:45", "end": "11:15" },
+          { "day": "Thu", "start": "09:45", "end": "11:15" }
         ]
       }
     ]
@@ -102,16 +70,8 @@
         "instructor": "Angela Cruz",
         "room": "G401",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "16:45",
-            "end": "18:15"
-          },
-          {
-            "day": "Thu",
-            "start": "16:45",
-            "end": "18:15"
-          }
+          { "day": "Tue", "start": "16:45", "end": "18:15" },
+          { "day": "Thu", "start": "16:45", "end": "18:15" }
         ]
       },
       {
@@ -120,16 +80,8 @@
         "instructor": "Andre Lim",
         "room": "G404",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "18:30",
-            "end": "20:00"
-          },
-          {
-            "day": "Wed",
-            "start": "18:30",
-            "end": "20:00"
-          }
+          { "day": "Mon", "start": "18:30", "end": "20:00" },
+          { "day": "Wed", "start": "18:30", "end": "20:00" }
         ]
       }
     ]
@@ -147,11 +99,7 @@
         "instructor": "Rina Garcia",
         "room": "A110",
         "schedule": [
-          {
-            "day": "Fri",
-            "start": "09:00",
-            "end": "12:00"
-          }
+          { "day": "Fri", "start": "09:00", "end": "12:00" }
         ]
       },
       {
@@ -160,11 +108,7 @@
         "instructor": "Noel Villanueva",
         "room": "A112",
         "schedule": [
-          {
-            "day": "Sat",
-            "start": "08:00",
-            "end": "11:00"
-          }
+          { "day": "Sat", "start": "08:00", "end": "11:00" }
         ]
       }
     ]
@@ -182,16 +126,8 @@
         "instructor": "Carlo Tan",
         "room": "L203",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "08:00",
-            "end": "09:30"
-          },
-          {
-            "day": "Wed",
-            "start": "08:00",
-            "end": "09:30"
-          }
+          { "day": "Mon", "start": "08:00", "end": "09:30" },
+          { "day": "Wed", "start": "08:00", "end": "09:30" }
         ]
       },
       {
@@ -200,16 +136,8 @@
         "instructor": "Mia Flores",
         "room": "L205",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "11:30",
-            "end": "13:00"
-          },
-          {
-            "day": "Thu",
-            "start": "11:30",
-            "end": "13:00"
-          }
+          { "day": "Tue", "start": "11:30", "end": "13:00" },
+          { "day": "Thu", "start": "11:30", "end": "13:00" }
         ]
       }
     ]
@@ -227,11 +155,7 @@
         "instructor": "Lara Bautista",
         "room": "R501",
         "schedule": [
-          {
-            "day": "Fri",
-            "start": "13:00",
-            "end": "15:00"
-          }
+          { "day": "Fri", "start": "13:00", "end": "15:00" }
         ]
       }
     ]
@@ -241,7 +165,7 @@
     "code": "CCINFOM",
     "title": "Information Management",
     "units": 3,
-    "color": "blue",
+    "color": "teal",
     "sections": [
       {
         "id": "CCINFOM-Y01",
@@ -249,16 +173,8 @@
         "instructor": "Mark Villanueva",
         "room": "G101",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "09:45",
-            "end": "11:15"
-          },
-          {
-            "day": "Wed",
-            "start": "09:45",
-            "end": "11:15"
-          }
+          { "day": "Mon", "start": "09:45", "end": "11:15" },
+          { "day": "Wed", "start": "09:45", "end": "11:15" }
         ]
       },
       {
@@ -267,16 +183,8 @@
         "instructor": "Anna Reyes",
         "room": "G102",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "08:00",
-            "end": "09:30"
-          },
-          {
-            "day": "Thu",
-            "start": "08:00",
-            "end": "09:30"
-          }
+          { "day": "Tue", "start": "08:00", "end": "09:30" },
+          { "day": "Thu", "start": "08:00", "end": "09:30" }
         ]
       }
     ]
@@ -286,7 +194,7 @@
     "code": "CCDSALG",
     "title": "Data Structures and Algorithms",
     "units": 3,
-    "color": "orange",
+    "color": "red",
     "sections": [
       {
         "id": "CCDSALG-Y01",
@@ -294,16 +202,8 @@
         "instructor": "Daniel Cruz",
         "room": "G201",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "13:15",
-            "end": "14:45"
-          },
-          {
-            "day": "Wed",
-            "start": "13:15",
-            "end": "14:45"
-          }
+          { "day": "Mon", "start": "13:15", "end": "14:45" },
+          { "day": "Wed", "start": "13:15", "end": "14:45" }
         ]
       }
     ]
@@ -313,7 +213,7 @@
     "code": "CSSWENG",
     "title": "Software Engineering",
     "units": 3,
-    "color": "purple",
+    "color": "indigo",
     "sections": [
       {
         "id": "CSSWENG-Y01",
@@ -321,16 +221,8 @@
         "instructor": "Michael Santos",
         "room": "G301",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "16:45",
-            "end": "18:15"
-          },
-          {
-            "day": "Wed",
-            "start": "16:45",
-            "end": "18:15"
-          }
+          { "day": "Mon", "start": "16:45", "end": "18:15" },
+          { "day": "Wed", "start": "16:45", "end": "18:15" }
         ]
       },
       {
@@ -339,16 +231,8 @@
         "instructor": "Isabel Garcia",
         "room": "G302",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "15:00",
-            "end": "16:30"
-          },
-          {
-            "day": "Thu",
-            "start": "15:00",
-            "end": "16:30"
-          }
+          { "day": "Tue", "start": "15:00", "end": "16:30" },
+          { "day": "Thu", "start": "15:00", "end": "16:30" }
         ]
       }
     ]
@@ -358,7 +242,7 @@
     "code": "CCPROJEC",
     "title": "Software Project Management",
     "units": 3,
-    "color": "green",
+    "color": "lime",
     "sections": [
       {
         "id": "CCPROJEC-Y01",
@@ -366,16 +250,8 @@
         "instructor": "Rachel Tan",
         "room": "G401",
         "schedule": [
-          {
-            "day": "Mon",
-            "start": "20:15",
-            "end": "21:45"
-          },
-          {
-            "day": "Wed",
-            "start": "20:15",
-            "end": "21:45"
-          }
+          { "day": "Mon", "start": "20:15", "end": "21:45" },
+          { "day": "Wed", "start": "20:15", "end": "21:45" }
         ]
       },
       {
@@ -384,16 +260,8 @@
         "instructor": "Kevin Lim",
         "room": "G402",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "18:30",
-            "end": "20:00"
-          },
-          {
-            "day": "Thu",
-            "start": "18:30",
-            "end": "20:00"
-          }
+          { "day": "Tue", "start": "18:30", "end": "20:00" },
+          { "day": "Thu", "start": "18:30", "end": "20:00" }
         ]
       }
     ]
@@ -403,7 +271,7 @@
     "code": "GEDESGN",
     "title": "Design Fundamentals",
     "units": 2,
-    "color": "pink",
+    "color": "magenta",
     "sections": [
       {
         "id": "GEDESGN-Y02",
@@ -411,11 +279,7 @@
         "instructor": "Paolo Rivera",
         "room": "A202",
         "schedule": [
-          {
-            "day": "Sat",
-            "start": "11:15",
-            "end": "12:45"
-          }
+          { "day": "Sat", "start": "11:15", "end": "12:45" }
         ]
       }
     ]
@@ -425,7 +289,7 @@
     "code": "GEETHIC",
     "title": "Ethics",
     "units": 3,
-    "color": "yellow",
+    "color": "brown",
     "sections": [
       {
         "id": "GEETHIC-Y02",
@@ -433,11 +297,7 @@
         "instructor": "Carla Navarro",
         "room": "A302",
         "schedule": [
-          {
-            "day": "Sat",
-            "start": "13:00",
-            "end": "14:30"
-          }
+          { "day": "Sat", "start": "13:00", "end": "14:30" }
         ]
       }
     ]
@@ -447,42 +307,16 @@
     "code": "CCCOMPRG",
     "title": "Computer Programming",
     "units": 3,
-    "color": "blue",
+    "color": "cyan",
     "sections": [
-      {
-        "id": "CCCOMPRG-Y01",
-        "section": "Y01",
-        "instructor": "Eric Mendoza",
-        "room": "L101",
-        "schedule": [
-          {
-            "day": "Mon",
-            "start": "22:00",
-            "end": "23:30"
-          },
-          {
-            "day": "Wed",
-            "start": "22:00",
-            "end": "23:30"
-          }
-        ]
-      },
       {
         "id": "CCCOMPRG-Y02",
         "section": "Y02",
         "instructor": "Grace Flores",
         "room": "L102",
         "schedule": [
-          {
-            "day": "Tue",
-            "start": "20:15",
-            "end": "21:45"
-          },
-          {
-            "day": "Thu",
-            "start": "20:15",
-            "end": "21:45"
-          }
+          { "day": "Tue", "start": "20:15", "end": "21:45" },
+          { "day": "Thu", "start": "20:15", "end": "21:45" }
         ]
       }
     ]
@@ -492,7 +326,7 @@
     "code": "CSSECUR",
     "title": "Introduction to Cybersecurity",
     "units": 3,
-    "color": "orange",
+    "color": "slate",
     "sections": [
       {
         "id": "CSSECUR-Y01",
@@ -500,11 +334,7 @@
         "instructor": "Victor Ramos",
         "room": "L201",
         "schedule": [
-          {
-            "day": "Fri",
-            "start": "17:00",
-            "end": "19:30"
-          }
+          { "day": "Fri", "start": "17:00", "end": "19:30" }
         ]
       },
       {
@@ -513,11 +343,7 @@
         "instructor": "Elaine Torres",
         "room": "L202",
         "schedule": [
-          {
-            "day": "Sat",
-            "start": "14:45",
-            "end": "17:15"
-          }
+          { "day": "Sat", "start": "14:45", "end": "17:15" }
         ]
       }
     ]

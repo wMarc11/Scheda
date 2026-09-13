@@ -1,35 +1,88 @@
 import { useState } from "react";
 import { useSchedule } from "../../context/ScheduleContext";
 
-const SectionRow = ({ section, courseId, units }) => {
+const SectionRow = ({ section, courseId, units, courseColor }) => {
     const { selectedSections, addSection, removeSection } = useSchedule();
     const [isHovering, setIsHovering] = useState(false);
 
     const isAdded = selectedSections.some(
         (selectedSection) => selectedSection.id === section.id
     ); 
+    
+    const colors = {
+        blue: {
+            bg: "bg-blue-50",
+            hover: "hover:bg-blue-600",
+            added: "bg-blue-500",
+        },
+        orange: {
+            bg: "bg-orange-50",
+            hover: "hover:bg-orange-600",
+            added: "bg-orange-500",
+        },
+        purple: {
+            bg: "bg-purple-50",
+            hover: "hover:bg-purple-600",
+            added: "bg-purple-500",
+        },
+        green: {
+            bg: "bg-green-50",
+            hover: "hover:bg-green-600",
+            added: "bg-green-500",
+        },
+        pink: {
+            bg: "bg-pink-50",
+            hover: "hover:bg-pink-600",
+            added: "bg-pink-500",
+        },
+        yellow: {
+            bg: "bg-yellow-50",
+            hover: "hover:bg-yellow-600",
+            added: "bg-yellow-500",
+        },
+        teal: {
+            bg: "bg-teal-50",
+            hover: "hover:bg-teal-600",
+            added: "bg-teal-500",
+        },
+        red: {
+            bg: "bg-red-50",
+            hover: "hover:bg-red-600",
+            added: "bg-red-500",
+        },
+        indigo: {
+            bg: "bg-indigo-50",
+            hover: "hover:bg-indigo-600",
+            added: "bg-indigo-500",
+        },
+        lime: {
+            bg: "bg-lime-50",
+            hover: "hover:bg-lime-600",
+            added: "bg-lime-500",
+        },
+        magenta: {
+            bg: "bg-fuchsia-50",
+            hover: "hover:bg-fuchsia-600",
+            added: "bg-fuchsia-500",
+        },
+        brown: {
+            bg: "bg-stone-50",
+            hover: "hover:bg-stone-600",
+            added: "bg-stone-500",
+        },
+        cyan: {
+            bg: "bg-cyan-50",
+            hover: "hover:bg-cyan-600",
+            added: "bg-cyan-500",
+        },
+        slate: {
+            bg: "bg-slate-50",
+            hover: "hover:bg-slate-600",
+            added: "bg-slate-500",
+        },
+    };
 
-    const firstTwoLettersInSection = courseId.slice(0, 2);
-
-const colors = {
-    CC: {
-        bg: "bg-blue-50",
-        hover: "hover:bg-blue-600",
-        added: "bg-blue-500",
-    },
-    GE: {
-        bg: "bg-green-50",
-        hover: "hover:bg-green-600",
-        added: "bg-green-500",
-    },
-    CS: {
-        bg: "bg-amber-50",
-        hover: "hover:bg-amber-600",
-        added: "bg-amber-500",
-    },
-};
-
-const color = colors[firstTwoLettersInSection] || colors.CC;
+    const color = colors[courseColor];
         
     return (
         <div className={`flex w-full items-center justify-center rounded-lg ${color.bg} px-3 py-2 md:px-4 md:py-3`}>
@@ -54,7 +107,7 @@ const color = colors[firstTwoLettersInSection] || colors.CC;
                 if (isAdded){   
                     removeSection(section.id);
                 } else {    
-                    addSection(section, courseId, units); 
+                    addSection(section, courseId, units, courseColor); 
                 }
             }}
                 onMouseEnter={() => setIsHovering(true)}

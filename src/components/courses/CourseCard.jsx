@@ -18,6 +18,7 @@ const CourseCard = ({ course }) => {
                             section={section}
                             courseId={course.id}
                             units={course.units}
+                            courseColor={course.color}
                         />
                     );
                 })}
