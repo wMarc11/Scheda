@@ -1,4 +1,5 @@
 import SectionRow from './SectionRow';
+import { getCourseColor } from '../../utils/courseColors';
 
 const CourseCard = ({ course }) => {
     return(
@@ -12,13 +13,14 @@ const CourseCard = ({ course }) => {
             </div>
             <div className="flex flex-col gap-2">
                 {course.sections.map((section) => {
+                    const courseColor = getCourseColor(course.code);
                     return(
                         <SectionRow
                             key={section.id}
                             section={section}
                             courseId={course.id}
                             units={course.units}
-                            courseColor={course.color}
+                            courseColor={courseColor}
                         />
                     );
                 })}

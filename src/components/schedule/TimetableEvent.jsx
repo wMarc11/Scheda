@@ -1,4 +1,5 @@
 import { timetoMinutes, getDayIndex } from "../../utils/time";
+import { getColorStyles } from "../../utils/courseColors";
 
 const TimetableEvent = ({ section, schedule, courseColor }) => {
     const dayIndex = getDayIndex(schedule.day);
@@ -13,52 +14,7 @@ const TimetableEvent = ({ section, schedule, courseColor }) => {
     const top = ((startMinutes - timeTableStart) / 60) * pixelsPerHour;
     const height = (duration / 60) * pixelsPerHour;
 
-    const colors = {
-        blue: {
-            bg: "bg-blue-50"
-        },
-        orange: {
-            bg: "bg-orange-50"
-        },
-        purple: {
-            bg: "bg-purple-50"
-        },
-        green: {
-            bg: "bg-green-50"
-        },
-        pink: {
-            bg: "bg-pink-50"
-        },
-        yellow: {
-            bg: "bg-yellow-50"
-        },
-        teal: {
-            bg: "bg-teal-50"
-        },
-        red: {
-            bg: "bg-red-50"
-        },
-        indigo: {
-            bg: "bg-indigo-50"
-        },
-        lime: {
-            bg: "bg-lime-50"
-        },
-        magenta: {
-            bg: "bg-fuchsia-50"
-        },
-        brown: {
-            bg: "bg-stone-50"
-        },
-        cyan: {
-            bg: "bg-cyan-50"
-        },
-        slate: {
-            bg: "bg-slate-50"
-        },
-    };
-
-    const color = colors[courseColor];
+    const color = getColorStyles(courseColor);
 
     return(
         <div

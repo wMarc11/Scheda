@@ -4,7 +4,6 @@
     "code": "CCPROG3",
     "title": "Object-Oriented Programming",
     "units": 3,
-    "color": "blue",
     "sections": [
       {
         "id": "CCPROG3-Y01",
@@ -33,7 +32,6 @@
     "code": "CSMODEL",
     "title": "Mathematical Modeling",
     "units": 3,
-    "color": "orange",
     "sections": [
       {
         "id": "CSMODEL-Y01",
@@ -62,7 +60,6 @@
     "code": "CCAPDEV",
     "title": "Application Development",
     "units": 3,
-    "color": "purple",
     "sections": [
       {
         "id": "CCAPDEV-Y01",
@@ -91,7 +88,6 @@
     "code": "GESTSOC",
     "title": "Science, Technology & Society",
     "units": 3,
-    "color": "green",
     "sections": [
       {
         "id": "GESTSOC-Y01",
@@ -118,7 +114,6 @@
     "code": "CSNETWK",
     "title": "Computer Networks",
     "units": 3,
-    "color": "pink",
     "sections": [
       {
         "id": "CSNETWK-Y01",
@@ -147,7 +142,6 @@
     "code": "GEDANCE",
     "title": "Dance and Wellness",
     "units": 2,
-    "color": "yellow",
     "sections": [
       {
         "id": "GEDANCE-Y01",
@@ -165,7 +159,6 @@
     "code": "CCINFOM",
     "title": "Information Management",
     "units": 3,
-    "color": "teal",
     "sections": [
       {
         "id": "CCINFOM-Y01",
@@ -194,7 +187,6 @@
     "code": "CCDSALG",
     "title": "Data Structures and Algorithms",
     "units": 3,
-    "color": "red",
     "sections": [
       {
         "id": "CCDSALG-Y01",
@@ -213,7 +205,6 @@
     "code": "CSSWENG",
     "title": "Software Engineering",
     "units": 3,
-    "color": "indigo",
     "sections": [
       {
         "id": "CSSWENG-Y01",
@@ -242,7 +233,6 @@
     "code": "CCPROJEC",
     "title": "Software Project Management",
     "units": 3,
-    "color": "lime",
     "sections": [
       {
         "id": "CCPROJEC-Y01",
@@ -271,7 +261,6 @@
     "code": "GEDESGN",
     "title": "Design Fundamentals",
     "units": 2,
-    "color": "magenta",
     "sections": [
       {
         "id": "GEDESGN-Y02",
@@ -289,7 +278,6 @@
     "code": "GEETHIC",
     "title": "Ethics",
     "units": 3,
-    "color": "brown",
     "sections": [
       {
         "id": "GEETHIC-Y02",
@@ -307,7 +295,6 @@
     "code": "CCCOMPRG",
     "title": "Computer Programming",
     "units": 3,
-    "color": "cyan",
     "sections": [
       {
         "id": "CCCOMPRG-Y02",
@@ -326,7 +313,6 @@
     "code": "CSSECUR",
     "title": "Introduction to Cybersecurity",
     "units": 3,
-    "color": "slate",
     "sections": [
       {
         "id": "CSSECUR-Y01",
