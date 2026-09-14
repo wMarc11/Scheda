@@ -22,7 +22,7 @@ const ScheduleTimetable = () => {
     );
 
     return (
-        <div className="rounded-xl border border-gray-200 bg-white p-4 sm:p-6 lg:h-[610px] lg:max-w-[700px] sticky top-24">
+        <div className="w-full rounded-xl border border-gray-200 bg-white p-4 sm:p-6 lg:h-[610px] lg:max-w-[700px] lg:sticky lg:top-24">
 
             <div className="mb-2 flex">
                 <h2 className="text-md md:text-xl font-semibold">Your week</h2>

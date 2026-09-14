@@ -27,8 +27,8 @@
         }   
 
         return (
-            <div className="flex gap-2">
-                <div className="relative flex w-[50%] md:w-[60%]">
+            <div className="flex flex-col gap-2 lg:flex-row">
+                <div className="relative flex w-[100%] lg:w-[50%] md:w-[60%]">
                     <span className="material-symbols-outlined !hidden lg:!block md:absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 !text-[20px]">
                         search
                     </span>
@@ -40,30 +40,32 @@
                         className="w-full rounded-lg border border-gray-300 px-4 py-3 md:pl-10 text-[11px] md:text-sm outline-none focus:border-blue-500"
                     />
                 </div>
-                <select
-                    type="select"
-                    value={filter}
-                    onChange={handleFilterChange}
-                    className="w-[25%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center"
-                >
-                    <option value="All">All Courses</option>
-                    <option value="added">Added</option>
-                    <option value="not-added">Not Added</option>
-                </select>
-                <select
-                    type="select"
-                    value={day}
-                    onChange={handleDayChange}
-                    className="w-[25%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center"
-                >
-                    <option value="All">All days</option>
-                    <option value="mon">Mon</option>
-                    <option value="tue">Tue</option>
-                    <option value="wed">Wed</option>
-                    <option value="thu">Thu</option>
-                    <option value="fri">Fri</option>
-                    <option value="sat">Sat</option>
-                </select>
+                <div className="flex gap-2 w-full lg:w-[50%]">
+                    <select
+                        type="select"
+                        value={filter}
+                        onChange={handleFilterChange}
+                        className="w-[50%] md:w-[20%] lg:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
+                    >
+                        <option value="All">All Courses</option>
+                        <option value="added">Added</option>
+                        <option value="not-added">Not Added</option>
+                    </select>
+                    <select
+                        type="select"
+                        value={day}
+                        onChange={handleDayChange}
+                        className="w-[50%] md:w-[20%] md:w-[lg%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
+                    >
+                        <option value="All">All days</option>
+                        <option value="mon">Mon</option>
+                        <option value="tue">Tue</option>
+                        <option value="wed">Wed</option>
+                        <option value="thu">Thu</option>
+                        <option value="fri">Fri</option>
+                        <option value="sat">Sat</option>
+                    </select>
+                </div>
             </div>
         );
     }

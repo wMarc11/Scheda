@@ -3,7 +3,7 @@ import CourseCard from "./CourseCard";
 const CourseList = ({ courses }) => {
     return (
         courses.length > 0 ?
-        <div className="flex flex-col gap-5 max-h-[40vh] lg:max-h-[70vh] overflow-y-auto">
+        <div className="flex flex-col gap-5 max-h-none overflow-y-auto">
             {courses.map((course) => {
                 return(
                     <CourseCard
