@@ -53,5 +53,5 @@ src/
 │   ├── useCourses.jsx              # Course-loading hook
 │   └── useSchedule.jsx             # Accesses schedule state and actions.
 ├── pages/                          # Course, schedule, and responsive views
-└── utils/                          # Colors and timetable calculations
+└── utils/                          # Shared utilities, colors, and timetable constants
 ```
