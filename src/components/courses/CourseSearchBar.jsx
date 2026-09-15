@@ -37,6 +37,7 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                     value={query}
                     onChange={handleSearchChange}
                     placeholder="Search by course or instructor"
+                    aria-label="Search by course or instructor"
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 md:pl-10 text-[11px] md:text-sm outline-none focus:border-blue-500"
                 />
             </div>
@@ -45,6 +46,7 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                     type="select"
                     value={filter}
                     onChange={handleFilterChange}
+                    aria-label="Filter courses by selection status"
                     className="w-[50%] md:w-[20%] lg:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
                 >
                     <option value="All">All Courses</option>
@@ -55,6 +57,7 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                     type="select"
                     value={day}
                     onChange={handleDayChange}
+                    aria-label="Filter courses by day"
                     className="w-[50%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
                 >
                     <option value="All">All days</option>
