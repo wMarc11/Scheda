@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import CourseSearchBar from "../components/courses/CourseSearchBar";
 import CourseList from "../components/courses/CourseList";
-import { useSchedule } from '../context/ScheduleContext';
+import { useSchedule } from '../hooks/useSchedule';
 
 const CoursesPage = ({ courses }) => {
     const [query, setQuery] = useState("");
