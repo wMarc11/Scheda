@@ -1,5 +1,6 @@
 import { timetoMinutes, getDayIndex } from "../../utils/time";
 import { getColorStyles } from "../../utils/courseColors";
+import { TIMETABLE_DAYS, TIMETABLE_START, PIXELS_PER_HOUR } from "../../utils/timeTable";
 
 const TimetableEvent = ({ section, schedule, courseColor }) => {
     const dayIndex = getDayIndex(schedule.day);
@@ -8,11 +9,10 @@ const TimetableEvent = ({ section, schedule, courseColor }) => {
 
     const duration = endMinutes - startMinutes;
 
-    const timeTableStart = 8 * 60;
-    const pixelsPerHour = 32.5; {/*32.5 because every 2 hours is 65px of height*/}
+    const top = ((startMinutes - TIMETABLE_START) / 60) * PIXELS_PER_HOUR;
+    const height = (duration / 60) * PIXELS_PER_HOUR;
 
-    const top = ((startMinutes - timeTableStart) / 60) * pixelsPerHour;
-    const height = (duration / 60) * pixelsPerHour;
+    const columnWidth = 100 / TIMETABLE_DAYS.length;
 
     const color = getColorStyles(courseColor);
 
@@ -22,8 +22,8 @@ const TimetableEvent = ({ section, schedule, courseColor }) => {
             style={{
                 top: `${top}px`,
                 height: `${height}px`,
-                left: `calc(${dayIndex * (100 / 6)}% + 4px)`,
-                width: `calc(${100 / 6}% - 8px)`
+                left: `calc(${dayIndex * columnWidth}% + 4px)`,
+                width: `calc(${columnWidth}% - 8px)`
             }}
         >
             <p><strong>{section.courseId}</strong></p>

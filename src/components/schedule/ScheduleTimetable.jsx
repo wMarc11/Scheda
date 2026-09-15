@@ -1,20 +1,9 @@
 import { useSchedule } from "../../hooks/useSchedule";
 import TimetableEvent from "./TimetableEvent";
-
+import { TIMETABLE_DAYS, TIMETABLE_TIMES } from "../../utils/timeTable";
 
 const ScheduleTimetable = () => {
     const { selectedSections } = useSchedule();
-
-    const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const times = [
-        "8:00 AM",
-        "10:00 AM",
-        "12:00 PM",
-        "2:00 PM",
-        "4:00 PM",
-        "6:00 PM",
-        "8:00 PM"
-    ];
 
     const courseCount = selectedSections.length;
     const totalUnits = selectedSections.reduce(
@@ -33,7 +22,7 @@ const ScheduleTimetable = () => {
             <div className="grid grid-cols-7">
                 <div className="border-b border-gray-200"></div>
 
-                {days.map((day) => (
+                {TIMETABLE_DAYS.map((day) => (
                     <div
                         key={day}
                         className="border-b border-gray-200 p-3 text-center text-sm font-medium"
@@ -45,13 +34,13 @@ const ScheduleTimetable = () => {
                 
                 <div className="relative">
                     <div className="grid grid-cols-7">
-                        {times.map((time) => (
+                        {TIMETABLE_TIMES.map((time) => (
                             <div key={time} className="contents">
                                 <div className="h-[65px] border-b border-gray-200 p-2 sm:p-3 text-xs sm:text-sm text-gray-500">
                                     {time}
                                 </div>
 
-                                {days.map((day) => (
+                                {TIMETABLE_DAYS.map((day) => (
                                     <div 
                                         key={day} 
                                         className="border-b border-gray-200 p-2 sm:p-3 text-center text-xs sm:text-sm font-medium"
