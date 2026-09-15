@@ -36,6 +36,12 @@ The application currently provides three filters:
 
 Additional filters were intentionally not added because they would increase the interface complexity without substantially  improving the current catalogue.
 
+## Performance validation
+
+The application was audited using Lighthouse against Vite’s production preview build (`npm run build` followed by `npm run preview`) in an Incognito browser session. The production audit achieved scores of 100 for Performance, Accessibility, and Best Practices, with an SEO score of 92.
+
+To reduce initial loading work, the application uses a compressed WebP logo and locally defined inline SVG icons. This removes the external Material Symbols font request and avoids downloading an icon font when only a small number of icons are needed.
+
 ## Performance considerations
 
 For the current catalogue size, React state, Context, and `useMemo` already provide an appropriate level of complexity. Filtering is derived from the source course data instead of being stored separately which avoids duplicated state and keeps the results predictable.

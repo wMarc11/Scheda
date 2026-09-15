@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import CoursesPage from "./CoursesPage";
 import SchedulePage from "./SchedulePage";
+import { ArrowUpIcon } from "../components/icons/Icons";
 
 const SchedulerPage = ({ courses }) => {
     const [view, setView] = useState("courses");
@@ -33,8 +34,8 @@ const SchedulerPage = ({ courses }) => {
         });
     }
 
-    const coursesButtonStyle = view === "courses" ? "bg-blue-500 text-white rounded-md font-semibold" : "bg-white";
-    const scheduleButtonStyle = view === "courses" ? "bg-white" : "bg-blue-500 text-white rounded-md font-semibold";
+    const coursesButtonStyle = view === "courses" ? "bg-blue-800 text-white rounded-md font-semibold" : "bg-white";
+    const scheduleButtonStyle = view === "courses" ? "bg-white" : "bg-blue-800 text-white rounded-md font-semibold";
 
     return(
         <>      
@@ -65,9 +66,7 @@ const SchedulerPage = ({ courses }) => {
                         className="fixed bottom-5 right-5 z-50 h-13 rounded-full bg-blue-500 p-3 text-white shadow-lg"
                         aria-label="Back-to-top"
                     >
-                        <span className="material-symbols-outlined">
-                            arrow_upward
-                        </span>
+                        <ArrowUpIcon className="h-6 w-6" />
                     </button>
                 )}
             </div>

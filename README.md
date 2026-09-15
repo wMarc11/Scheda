@@ -38,16 +38,45 @@ npm install
 npm run dev
 ```
 
+### Available commands
+
+```bash
+npm run dev         # Start the development server
+npm run build       # Create a production build
+npm run preview     # Preview the production build locally
+npm run lint        # Check code quality with ESLint
+```
+
+### Quality checks
+
+The project passes the following checks:
+
+```bash
+npm run lint
+npm run build
+```
+
+The production build was audited with Lighthouse using `npm run preview` in an Incognito browser session.
+
+- Performance: 100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 92
+
 ### Project structure
 
 ```text
+
 src/
 ├── api/coursesApi.js               # Local course-data access point
 ├── assets/images/                  # Application branding
 ├── components/
 │   ├── courses/                    # Search, course cards, and section controls
-│   └── schedule/                   # Timetable and meeting/class events
-├── context/ScheduleContext.jsx     # Shared selected-section state
+│   ├── icons/                      # Local reusable SVG icons
+│   └── schedule/                   # Timetable and meeting events
+├── context/
+│   ├── ScheduleContext.jsx         # Shared context definition
+│   └── ScheduleProvider.jsx        # Selected-section state and actions
 ├── data/courses.json               # Mock course catalogue
 ├── hooks/
 │   ├── useCourses.jsx              # Course-loading hook
@@ -55,3 +84,7 @@ src/
 ├── pages/                          # Course, schedule, and responsive views
 └── utils/                          # Shared utilities, colors, and timetable constants
 ```
+
+### Documentation
+
+See [Technical Rationale](./Technical%20Rationale.md) for implementation decisions, responsive design choices, performance considerations, and future improvements.

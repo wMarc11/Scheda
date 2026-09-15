@@ -1,4 +1,5 @@
 import CourseCard from "./CourseCard";
+import { SearchIcon } from "../icons/Icons";
 
 const CourseList = ({ courses }) => {
     return (
@@ -14,11 +15,9 @@ const CourseList = ({ courses }) => {
             })}
         </div> :
         <div className="flex flex-col p-4 justify-center items-center">
-            <span className="material-symbols-outlined text-gray-400 !text-[36px]">
-                search
-            </span>
+            <SearchIcon className="h-9 w-9 text-gray-400" />
             <h1 className="font-semibold">No courses found.</h1>
-            <p className="font-gray-500 ">Try another search term or clear your filters.</p>
+            <p className="text-gray-500">Try another search term or clear your filters.</p>
         </div>
     );
 };

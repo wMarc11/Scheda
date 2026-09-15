@@ -1,4 +1,5 @@
 import { useState} from "react";
+import { SearchIcon } from "../icons/Icons";
 
 const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
     const [query, setQuery] = useState("");
@@ -29,12 +30,12 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
     return (
         <div className="flex flex-col gap-2 lg:flex-row">
             <div className="relative flex w-[100%] lg:w-[50%] md:w-[60%]">
-                <span className="material-symbols-outlined !hidden lg:!block md:absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 !text-[20px]">
-                    search
-                </span>
+                <SearchIcon className="hidden h-5 w-5 text-gray-400 md:absolute md:left-3 md:top-1/2 md:-translate-y-1/2 lg:block" />
                 <input 
                     type="text"
                     value={query}
+                    id="search-bar"
+                    name="search-bar"
                     onChange={handleSearchChange}
                     placeholder="Search by course or instructor"
                     aria-label="Search by course or instructor"
@@ -45,6 +46,8 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                 <select
                     type="select"
                     value={filter}
+                    id="filter-selection-status"
+                    name="filter-selection-status"
                     onChange={handleFilterChange}
                     aria-label="Filter courses by selection status"
                     className="w-[50%] md:w-[20%] lg:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
@@ -56,6 +59,8 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                 <select
                     type="select"
                     value={day}
+                    id="filter-day"
+                    name="filter-day"
                     onChange={handleDayChange}
                     aria-label="Filter courses by day"
                     className="w-[50%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
