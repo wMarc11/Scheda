@@ -32,7 +32,7 @@ function App() {
           </div>
         </div>
       </header> 
-      <main className="lg:mx-5 max-w-7x1 p-6 flex justify-center">
+      <main className="lg:mx-5 p-6 flex justify-center">
         <div className="w-full lg:w-auto mt-15 lg:mt-24">
           <SchedulerPage courses={courses}/>
         </div>

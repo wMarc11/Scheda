@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 
 const ScheduleContext = createContext();
 
@@ -34,8 +34,4 @@ export const ScheduleProvider = ({ children }) => {
             {children}
         </ScheduleContext.Provider>
     );
-};
-
-export const useSchedule = () => {
-    return useContext(ScheduleContext);
 };

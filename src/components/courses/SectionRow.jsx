@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useSchedule } from "../../context/ScheduleContext";
+import { useSchedule } from "../../hooks/useSchedule";
 import { getColorStyles } from "../../utils/courseColors";
 
 const SectionRow = ({ section, courseId, units, courseColor }) => {
