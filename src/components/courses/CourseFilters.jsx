@@ -34,8 +34,8 @@ const CourseFilters = ({ onSearch, onDayChange, onFilterChange }) => {
     }   
 
     return (
-        <div className="flex flex-col gap-2 lg:flex-row">
-            <div className="relative flex w-[100%] lg:w-[50%] md:w-[60%]">
+        <div className="flex flex-col gap-2 md:flex-row lg:flex-row">
+            <div className="relative flex w-[100%] lg:w-[50%] md:w-[50%]">
                 <SearchIcon className="hidden h-5 w-5 text-gray-400 md:absolute md:left-3 md:top-1/2 md:-translate-y-1/2 lg:block" />
                 <input 
                     type="text"
@@ -48,14 +48,14 @@ const CourseFilters = ({ onSearch, onDayChange, onFilterChange }) => {
                     className="w-full rounded-lg border border-gray-300 px-4 py-3 md:pl-10 text-[11px] md:text-sm outline-none focus:border-blue-500"
                 />
             </div>
-            <div className="flex gap-2 w-full lg:w-[50%]">
+            <div className="flex gap-2 w-full md:w-[50%] lg:w-[50%]">
                 <select
                     value={filter}
                     id="filter-selection-status"
                     name="filter-selection-status"
                     onChange={handleFilterChange}
                     aria-label="Filter courses by selection status"
-                    className="w-[50%] md:w-[20%] lg:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
+                    className="w-[50%] lg:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
                 >
                     <option value="All">All Courses</option>
                     <option value="added">Added</option>
@@ -67,7 +67,7 @@ const CourseFilters = ({ onSearch, onDayChange, onFilterChange }) => {
                     name="filter-day"
                     onChange={handleDayChange}
                     aria-label="Filter courses by day"
-                    className="w-[50%] md:w-[20%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
+                    className="w-[50%] rounded-lg border border-gray-300 px-2 py-3 text-[11px] md:text-sm outline-none text-gray-500 focus:border-blue-500 text-center lg:flex-1"
                 >
                     <option value="All">All days</option>
                     <option value="mon">Mon</option>
