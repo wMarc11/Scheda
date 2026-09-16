@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
-import CourseSearchBar from "../components/courses/CourseSearchBar";
 import CourseList from "../components/courses/CourseList";
 import { useSchedule } from '../hooks/useSchedule';
+import CourseFilters from "../components/courses/CourseFilters";
 
 const CoursesPage = ({ courses }) => {
     const [query, setQuery] = useState("");
@@ -49,7 +49,7 @@ const CoursesPage = ({ courses }) => {
     return(
         <div className="w-full rounded-xl border border-gray-200 bg-white p-4 sm:p-6 lg:max-w-[700px] gap-7 flex flex-col">
             <h1 className="text-[16px] md:text-[22px] font-bold">Find your classes</h1>
-            <CourseSearchBar onSearch={setQuery} onDayChange={setDay} onFilterChange={setFilter} />
+            <CourseFilters onSearch={setQuery} onDayChange={setDay} onFilterChange={setFilter} />
             <CourseList courses={filteredCourses} />
         </div>
     );

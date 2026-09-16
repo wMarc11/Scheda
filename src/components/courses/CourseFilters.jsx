@@ -1,16 +1,22 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 import { SearchIcon } from "../icons/Icons";
+import { useDebounce } from "../../hooks/useDebounce";
 
-const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
+const CourseFilters = ({ onSearch, onDayChange, onFilterChange }) => {
     const [query, setQuery] = useState("");
     const [day, setDay] = useState("All");
     const [filter, setFilter] = useState("All");
+
+    const debouncedQuery = useDebounce(query, 300);
+
+    useEffect(() => {
+        onSearch(debouncedQuery)
+    }, [debouncedQuery, onSearch]);
 
     const handleSearchChange = (event) => {
         const value = event.target.value;
 
         setQuery(value);
-        onSearch(value);
     };
 
     const handleDayChange = (event) => {
@@ -44,7 +50,6 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
             </div>
             <div className="flex gap-2 w-full lg:w-[50%]">
                 <select
-                    type="select"
                     value={filter}
                     id="filter-selection-status"
                     name="filter-selection-status"
@@ -57,7 +62,6 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
                     <option value="not-added">Not Added</option>
                 </select>
                 <select
-                    type="select"
                     value={day}
                     id="filter-day"
                     name="filter-day"
@@ -78,4 +82,4 @@ const CourseSearchBar = ({ onSearch, onDayChange, onFilterChange }) => {
     );
 }
 
-export default CourseSearchBar;
+export default CourseFilters;

@@ -81,6 +81,7 @@ src/
 ├── hooks/
 │   ├── useCourses.jsx              # Course-loading hook
 │   └── useSchedule.jsx             # Accesses schedule state and actions.
+│   └── useDebounce.jsx             # Delays updates until input stops changing
 ├── pages/                          # Course, schedule, and responsive views
 └── utils/                          # Shared utilities, colors, and timetable constants
 ```

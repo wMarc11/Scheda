@@ -44,9 +44,9 @@ To reduce initial loading work, the application uses a compressed WebP logo and 
 
 ## Performance considerations
 
-For the current catalogue size, React state, Context, and `useMemo` already provide an appropriate level of complexity. Filtering is derived from the source course data instead of being stored separately which avoids duplicated state and keeps the results predictable.
+For the current catalogue size, React state, Context, and `useMemo` already provide an appropriate level of complexity. Filtering is derived from the source course data instead of being stored separately which avoids duplicated state and keeps the results predictable. Search input is also debounced by 300 ms through the `useDebounce` hook, so filtering runs only after the user pauses typing instead of on every keypress.
 
-However, if the catalogue became significantly larger, the possible next steps would include using a `Set` of selected section IDs to make checking whether a section is selected faster than repeatedly searching the selected-sections array, implement debouncing search input so that it won't filter after every single keypress, and virtualizing the course list instead of displaying them all at once.
+However, if the catalogue became significantly larger, the possible next steps would include virtualizing the course list instead of displaying them all at once.
 
 ## Current limitations and future work
 

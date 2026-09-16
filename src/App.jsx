@@ -25,7 +25,7 @@ function App() {
               alt="Scheda logo"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} 
               fetchPriority="high"
-              className="-ml-6 w-[170px] h-[50px] md:w-[250px] md:h-[70px] cursor-pointer transition-all ease-in-out hover:scale-110" 
+              className="-ml-6 w-[170px] h-auto md:w-[250px] cursor-pointer transition-all ease-in-out hover:scale-110" 
             />
             <div className="ml-auto flex items-center gap-7 md:-mr-5 px-4 md:px-none">
               <p className="text-xs lg:text-[14px] font-semibold">Term 1, AY 2026-2027</p>
