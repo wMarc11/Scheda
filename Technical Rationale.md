@@ -38,7 +38,7 @@ Additional filters were intentionally not added because they would increase the 
 
 ## Performance validation
 
-The application was audited using Lighthouse against Vite’s production preview build (`npm run build` followed by `npm run preview`) in an Incognito browser session. The production audit achieved scores of 100 for Performance, Accessibility, and Best Practices, with an SEO score of 92.
+The application was audited using Lighthouse against Vite’s production preview build (`npm run build` followed by `npm run preview`) in an Incognito browser session. The production audit achieved scores of 100 for Performance, Accessibility, and Best Practices, with an SEO score of 92 for both mobile and desktop.
 
 To reduce initial loading work, the application uses a compressed WebP logo and locally defined inline SVG icons. This removes the external Material Symbols font request and avoids downloading an icon font when only a small number of icons are needed.
 

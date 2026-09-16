@@ -56,7 +56,7 @@ npm run lint
 npm run build
 ```
 
-The production build was audited with Lighthouse using `npm run preview` in an Incognito browser session.
+The production build was audited with Lighthouse using `npm run preview` in an Incognito browser session for both desktop and mobile.
 
 - Performance: 100
 - Accessibility: 100
